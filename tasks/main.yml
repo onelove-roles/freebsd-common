@@ -1,7 +1,4 @@
 ---
-- name: install python
-  raw: pkg install -y python
-
 - name: stop sendmail
   service:
     name: sendmail
