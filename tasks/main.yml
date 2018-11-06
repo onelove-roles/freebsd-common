@@ -24,3 +24,12 @@
     path: /etc/ssl/private
     mode: 0700
     state: directory
+
+- stat: path=/usr/home/devel
+  register: devel_home
+
+- name: configure development locale
+  template:
+    src: login_conf.j2
+    dest: /usr/home/devel/.login_conf
+  when: devel_home.stat.exists == True
