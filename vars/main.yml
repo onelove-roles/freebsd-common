@@ -1,3 +1,15 @@
 ---
+python_major: 3
+python_minor: 8
+python_version: "{{ python_major }}.{{ python_minor }}"
+python_version_short: "{{ python_major }}{{ python_minor }}"
+python_prefix: "py{{ python_version_short }}"
+
+php_major: 8
+php_minor: 0
+php_version: "{{ php_major }}.{{ php_minor }}"
+php_version_short: "{{ php_major }}{{ php_minor }}"
+php_prefix: "php{{ php_version_short }}"
+
 common_packages:
   - name: ca_root_nss
