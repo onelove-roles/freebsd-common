@@ -9,10 +9,11 @@
     src: sendmail.j2
     dest: /etc/rc.conf.d/sendmail
 
-- name: install packages
+- name: install common packages
   with_items: "{{ common_packages }}"
-  pkgng:
+  package:
     name: "{{ item.name }}"
+    state: latest
 
 - name: create certs dir
   file:
