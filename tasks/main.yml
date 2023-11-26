@@ -1,14 +1,4 @@
 ---
-- name: stop sendmail
-  service:
-    name: sendmail
-    state: stopped
-
-- name: disable sendmail
-  template:
-    src: sendmail.j2
-    dest: /etc/rc.conf.d/sendmail
-
 - name: install common packages
   with_items: "{{ common_packages }}"
   package:
