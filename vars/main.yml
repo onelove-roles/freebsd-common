@@ -1,12 +1,12 @@
 ---
 python_major: 3
-python_minor: 9
+python_minor: 11
 python_version: "{{ python_major }}.{{ python_minor }}"
 python_version_short: "{{ python_major }}{{ python_minor }}"
 python_prefix: "py{{ python_version_short }}"
 
 php_major: 8
-php_minor: 0
+php_minor: 3
 php_version: "{{ php_major }}.{{ php_minor }}"
 php_version_short: "{{ php_major }}{{ php_minor }}"
 php_prefix: "php{{ php_version_short }}"
