@@ -6,7 +6,7 @@ python_version_short: "{{ python_major }}{{ python_minor }}"
 python_prefix: "py{{ python_version_short }}"
 
 php_major: 8
-php_minor: 3
+php_minor: 4
 php_version: "{{ php_major }}.{{ php_minor }}"
 php_version_short: "{{ php_major }}{{ php_minor }}"
 php_prefix: "php{{ php_version_short }}"
