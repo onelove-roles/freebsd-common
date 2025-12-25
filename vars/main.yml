@@ -1,4 +1,9 @@
 ---
+cyrus_major: 3
+cyrus_minor: 12
+cyrus_version: "{{ cyrus_major }}.{{ cyrus_minor }}"
+cyrus_version_short: "{{ cyrus_major }}{{ cyrus_minor }}"
+
 python_major: 3
 python_minor: 11
 python_version: "{{ python_major }}.{{ python_minor }}"
